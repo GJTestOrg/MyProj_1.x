@@ -1,6 +1,7 @@
 <?php
 
-class Class2 {
-  
+class Class2
+{
+    public $var2;
 }
 
