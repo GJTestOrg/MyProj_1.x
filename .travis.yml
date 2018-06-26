@@ -1,0 +1,4 @@
+language: php
+script: ./build.sh
+after_script: cat class1.php
+
