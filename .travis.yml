@@ -2,4 +2,4 @@ language: php
 script: ./build.sh
 after_script:
 - ./after_build.sh
-- php vendor/bin/codecept run
+- php codecept.phar run
