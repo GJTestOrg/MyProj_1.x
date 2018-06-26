@@ -1,5 +1,7 @@
 <?php
 
+###DOCBLOCK###
+
 /**
  * Class5
  */

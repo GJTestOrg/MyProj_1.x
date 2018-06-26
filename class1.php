@@ -1,5 +1,7 @@
 <?php
 
+###DOCBLOCK###
+
 class Class1
 {
     const ERR_INVALID_VALUE    = 1;
