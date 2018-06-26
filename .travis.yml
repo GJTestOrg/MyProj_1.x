@@ -1,4 +1,4 @@
 language: php
 script: ./build.sh
-after_script: cat class1.php
+after_script: ./after_build.sh
 
