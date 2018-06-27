@@ -1,6 +1,6 @@
 <?php
 
-require_once '../class1.php';
+require_once 'class1.php';
 
 class Class1Cest
 {
