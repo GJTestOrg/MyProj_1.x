@@ -1,5 +1,11 @@
 language: php
-script: ./build.sh
+
+before_script:
+- composer install --no-interaction
+
+script:
+- ./build.sh
+- composer test
+
 after_script:
 - ./after_build.sh
-- php vendor/codeception/codeception/codecept run
