@@ -3,7 +3,7 @@
 echo "Installing pre-requisites"
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get install apache2 -y -q > /dev/null 2>&1
-sudo apt-get install php5-mysql -y -q /dev/null 2>&1
+sudo apt-get install php5-mysql -y -q > /dev/null 2>&1
 sudo apt-get install php-mbstring -y
 sudo service apache2 restart > /dev/null 2>&1
 
@@ -28,15 +28,12 @@ echo '$g_hostname = '"'127.0.0.1';" >> /var/www/html/mantis/config/config_inc.ph
 echo '$g_db_type = '"'mysqli';" >> /var/www/html/mantis/config/config_inc.php
 echo '$g_database_name = '"'mantis';" >> /var/www/html/mantis/config/config_inc.php
 echo '$g_db_username = '"'mantis';" >> /var/www/html/mantis/config/config_inc.php
-echo '$g_db_password = '"'m4ntis';" >> /var/www/html/mantis/config/config_inc.php
+echo '$g_db_password = '"'m4nt1s';" >> /var/www/html/mantis/config/config_inc.php
 echo '$g_default_timezone = '"'UTC';" >> /var/www/html/mantis/config/config_inc.php
 echo '$g_crypto_master_salt = '"'XYtly+fyYaWPnscCvj0PkCFPMuy5hii1VebD2oamyPw=';" >> /var/www/html/mantis/config/config_inc.php
 
-echo "Verifying configuration"
-sudo cat /var/www/html/mantis/config/config_inc.php
-
 echo "Verifying install"
-wget http://127.0.0.1/mantis/login_page.php > mantis_install_test.txt
+wget http://127.0.0.1/mantis/login_page.php
 ls -al
-cat mantis_install_test.txt
+cat login_page.php
 
