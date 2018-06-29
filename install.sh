@@ -6,6 +6,7 @@ sudo apt-get install unzip -y
 sudo apt-get install php-mbstring -y
 sudo apt-get install apache2 -y
 sudo apt-get install php-mysql -y
+sudo service apache2 restart
 
 echo "Creating Mantis database"
 sudo mysql -u root -e "CREATE DATABASE mantis;"
