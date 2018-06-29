@@ -1,0 +1,26 @@
+{
+  "name": "MyProj",
+  "description": "MyProj",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "gjtest12",
+      "homepage": "https://github.com/GJTestOrg/MyProj_1.x"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.3"
+  },
+  "require-dev": {
+    "codeception/codeception": "~2.3.4"
+  },
+  "scripts": {
+    "test": "./vendor/bin/codecept run --no-interaction"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
