@@ -4,6 +4,7 @@ echo "Installing pre-requisites"
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get install apache2 -y -q > /dev/null 2>&1
 sudo apt-get install php5-mysql -y -q > /dev/null 2>&1
+sudo apt-get install libapache2-mod-php -y 
 sudo apt-get install php-mbstring -y
 sudo service apache2 restart > /dev/null 2>&1
 
